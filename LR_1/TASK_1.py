@@ -17,7 +17,7 @@ import cv2
 image_extensions = ["png", "jpg", "bmp"]
 
 for ext in image_extensions:
-    image_path = r'C:\Users\Sultan\Documents\1.jpg'
+    image_path = r'..\media\1.jpg'
     img = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)  # Чтение в оттенках серого
 
     if img is not None:
