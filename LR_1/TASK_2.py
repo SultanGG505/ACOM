@@ -1,14 +1,3 @@
-import cv2
-
-img1 = cv2.imread(r'C:\Users\Sultan\Documents\1.jpg')
-# # cv2.imread(	filename[, flags]	)
-# # flags = IMREAD_COLOR
-# # cv.imread(filename[, flags]) -> retval
-# cv2.namedWindow("Display window",cv2.WINDOW_KEEPRATIO)
-# cv2.imshow("Display window", img1)
-# cv2.waitKey(0)
-
-
 
 # cap = cv2.VideoCapture(r'C:\Users\AlmaZ\Videos\Resident Evil 4 Biohazard 4\Resident Evil 4 Biohazard 4 2023.09.05 - 19.43.57.04.DVR', cv2.CAP_ANY)
 # ret, frame = cap.read()
@@ -66,7 +55,7 @@ img1 = cv2.imread(r'C:\Users\Sultan\Documents\1.jpg')
 # cap.release()
 # cv2.destroyAllWindows()
 
-hsv = cv2.cvtColor(img1, cv2.COLOR_BGR2HSV)
-cv2.namedWindow("Display window",cv2.WINDOW_KEEPRATIO)
-cv2.imshow("Display window", hsv)
-cv2.waitKey(0)
+# hsv = cv2.cvtColor(img1, cv2.COLOR_BGR2HSV)
+# cv2.namedWindow("Display window",cv2.WINDOW_KEEPRATIO)
+# cv2.imshow("Display window", hsv)
+# cv2.waitKey(0)
