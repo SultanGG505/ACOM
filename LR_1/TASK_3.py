@@ -31,6 +31,7 @@ while True:
     # resize = cv2.resize(frame, (640, 360))
     # изменение расширения
     # cv2.normalize(frame, frame, 0, 277, cv2.NORM_MINMAX)
+    cv2.namedWindow('image', cv2.WINDOW_NORMAL)  # Окно с изменяемым размером
     cv2.imshow("Video", frame) #если mp4, то поменять frame на resize
 
     # Выход на q.
