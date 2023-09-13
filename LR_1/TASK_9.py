@@ -3,7 +3,7 @@ import cv2
 
 # cap = cv2.VideoCapture(r'..\media\lol.mp4')
 # если указать 0, то будет вебка
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 
 
 # cv2.CAP_PROP_BRIGHTNESS - яркость (0-1)

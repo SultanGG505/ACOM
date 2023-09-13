@@ -1,95 +1,46 @@
 import cv2
 import numpy as np
-import time
 
-# Инициализация видеозахвата с камеры
-cap = cv2.VideoCapture(0)
-
-# Установка разрешения
-cap.set(3, 320)
-cap.set(4, 240)
-
-# Создание окна для настроек
-cv2.namedWindow("Control", cv2.WINDOW_NORMAL)
-
-# Начальные значения для трекбаров
-iLowH = 170
-iHighH = 179
-iLowS = 150
-iHighS = 255
-iLowV = 60
-iHighV = 255
-
-# Создание трекбаров
-cv2.createTrackbar("LowH", "Control", iLowH, 179)
-cv2.createTrackbar("HighH", "Control", iHighH, 179)
-cv2.createTrackbar("LowS", "Control", iLowS, 255)
-cv2.createTrackbar("HighS", "Control", iHighS, 255)
-cv2.createTrackbar("LowV", "Control", iLowV, 255)
-cv2.createTrackbar("HighV", "Control", iHighV, 255)
-
-iLastX = -1
-iLastY = -1
-
-# Чтение временного изображения и создание черного изображения для линий
-ret, imgTmp = cap.read()
-imgLines = np.zeros_like(imgTmp)
-
-# Начало замера времени
-start = time.time()
-frames = 0
+# Задание 1: Чтение изображения с камеры
+cap = cv2.VideoCapture(0)  # 0 - индекс камеры (обычно это встроенная камера)
 
 while True:
-    # Чтение кадра с камеры
-    ret, imgOriginal = cap.read()
-
-    # Преобразование BGR в HSV
-    imgHSV = cv2.cvtColor(imgOriginal, cv2.COLOR_BGR2HSV)
-
-    # Применение цветового фильтра
-    lower_bound = np.array([iLowH, iLowS, iLowV])
-    upper_bound = np.array([iHighH, iHighS, iHighV])
-    imgThresholded = cv2.inRange(imgHSV, lower_bound, upper_bound)
-
-    # Морфологическая обработка
-    kernel = np.ones((5, 5), np.uint8)
-    imgThresholded = cv2.erode(imgThresholded, kernel, iterations=1)
-    imgThresholded = cv2.dilate(imgThresholded, kernel, iterations=1)
-    imgThresholded = cv2.dilate(imgThresholded, kernel, iterations=1)
-    imgThresholded = cv2.erode(imgThresholded, kernel, iterations=1)
-
-    # Вычисление моментов
-    moments = cv2.moments(imgThresholded)
-    area = moments['m00']
-
-    if area > 10000:
-        posX = int(moments['m10'] / area)
-        posY = int(moments['m01'] / area)
-
-        if iLastX >= 0 and iLastY >= 0 and posX >= 0 and posY >= 0:
-            cv2.line(imgLines, (posX, posY), (iLastX, iLastY), (0, 0, 255), 2)
-
-        iLastX = posX
-        iLastY = posY
-
-    # Отображение изображений
-    cv2.imshow("Thresholded Image", imgThresholded)
-    imgOriginal = cv2.add(imgOriginal, imgLines)
-    cv2.imshow("Original", imgOriginal)
-
-    # Ожидание клавиши 'Esc' для выхода
-    if cv2.waitKey(30) == 27:
-        print("Esc key is pressed by the user")
+    ret, frame = cap.read()  # Чтение кадра с камеры
+    if not ret:
         break
 
-    frames += 1
+    # Задание 2: Фильтрация и вывод красной части изображения
+    lower_red = np.array([0, 0, 100])
+    upper_red = np.array([100, 100, 255])
+    red_mask = cv2.inRange(frame, lower_red, upper_red)
+    red_filtered = cv2.bitwise_and(frame, frame, mask=red_mask)
 
-# Завершение замера времени
-end = time.time()
-elapsed_time = end - start
-fps = frames / elapsed_time
-print(f"FPS: {fps:.2f}")
+    # Задание 3: Морфологические преобразования
+    kernel = np.ones((5, 5), np.uint8)
+    opening = cv2.morphologyEx(red_filtered, cv2.MORPH_OPEN, kernel)
+    closing = cv2.morphologyEx(opening, cv2.MORPH_CLOSE, kernel)
 
-# Освобождение ресурсов и закрытие окон
+    # Задание 4: Преобразование в черно-белое изображение и поиск моментов
+    gray = cv2.cvtColor(closing, cv2.COLOR_BGR2GRAY)
+    contours, _ = cv2.findContours(gray, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    for contour in contours:
+        area = cv2.contourArea(contour)
+        print("Площадь объекта:", area)
+
+    # Задание 5: Найти центр и построить прямоугольник
+    if contours:
+        largest_contour = max(contours, key=cv2.contourArea)
+        moments = cv2.moments(largest_contour)
+        if moments["m00"] != 0:
+            cx = int(moments["m10"] / moments["m00"])
+            cy = int(moments["m01"] / moments["m00"])
+            cv2.rectangle(frame, (cx - 50, cy - 50), (cx + 50, cy + 50), (0, 0, 0), 2)
+
+    cv2.imshow("Original", frame)
+    cv2.imshow("Filtered", closing)
+
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+
 cap.release()
 cv2.destroyAllWindows()
