@@ -10,8 +10,8 @@ while True:
         break
 
     # Задание 2: Фильтрация и вывод красной части изображения
-    lower_red = np.array([0, 0, 100])
-    upper_red = np.array([100, 100, 255])
+    lower_red = np.array([0, 120, 120])
+    upper_red = np.array([100, 255, 255])
     red_mask = cv2.inRange(frame, lower_red, upper_red)
     red_filtered = cv2.bitwise_and(frame, frame, mask=red_mask)
 
@@ -39,7 +39,7 @@ while True:
     cv2.imshow("Original", frame)
     cv2.imshow("Filtered", closing)
 
-    if cv2.waitKey(1) & 0xFF == ord('q'):
+    if cv2.waitKey(1) & 0xFF == ord(' '):
         break
 
 cap.release()
