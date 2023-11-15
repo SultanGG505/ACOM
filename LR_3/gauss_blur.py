@@ -1,4 +1,3 @@
-
 import cv2
 import numpy as np
 
@@ -6,16 +5,24 @@ def main():
 
     # Задание 1 - построение матрицы Гаусса
     # чтение изображения в черно-белом формате
-    img = cv2.imread(r'..\media\2.jpg', cv2.IMREAD_GRAYSCALE)
+    img = cv2.imread( r'..\media\2.jpg', cv2.IMREAD_GRAYSCALE)
 
-    standard_deviation = 100
-    kernel_size = 5
+    standard_deviation = 9
+    kernel_size = 11
     imgBlur_1 = AnotherGaussianBlur(img, kernel_size, standard_deviation)
-    cv2.imshow('Original_image', img)
-    cv2.imshow(str(kernel_size)+'x'+str(kernel_size) +
-               ' and ' + str(standard_deviation), imgBlur_1)
+    #cv2.imshow('Original_image', img)
+    cv2.imshow(str(kernel_size) + 'x' + str(kernel_size) + ' and deviation ' + str(standard_deviation), imgBlur_1)
 
+    # # Задание 4 - Применение фильтра с другими параметрами
+    # standard_deviation = 50
+    # kernel_size = 11
+    # imgBlur_2 = AnotherGaussianBlur(img, kernel_size, standard_deviation)
+    # cv2.imshow(str(kernel_size) + 'x' + str(kernel_size) + ' and deviation ' + str(standard_deviation), imgBlur_2)
 
+    # Задание 5 - Реализация размытие Гаусса встроенным методом OpenCV
+    imgBlur_CV2 = cv2.GaussianBlur(
+        img, (kernel_size, kernel_size), standard_deviation)
+    cv2.imshow('Blur_by_CV2', imgBlur_CV2)
     cv2.waitKey(0)
 
 
@@ -28,7 +35,7 @@ def AnotherGaussianBlur(img, kernel_size, standard_deviation):
     for i in range(kernel_size):
         for j in range(kernel_size):
             kernel[i, j] = gauss(i, j, standard_deviation, a, b) # вычисление функции Гаусса
-    print(kernel)
+    #print(kernel)
 
     # Задание 2 - Нормализация матрицы ядра свёртки
     sum = 0
@@ -40,12 +47,12 @@ def AnotherGaussianBlur(img, kernel_size, standard_deviation):
             kernel[i, j] /= sum
     #print(kernel)
 
-    # применение операции свёртки
+    # применение операции свёртки к изображению
     imgBlur = Convolution(img, kernel)
     return imgBlur
 
 
-# реализация операции свёртки изображения
+# реализация операции свёртки
 def Convolution(img, kernel):
     kernel_size = len(kernel)
     imgBlur = img.copy()

@@ -66,7 +66,7 @@ int main() {
                                    {21.0, 22.0, 23.0, 24.0, 25.0} };
 
     int kernel_size = 5;
-    double standard_deviation = 100.0;
+    double standard_deviation = 1.0;
 
     vector<vector<double>> img_blurred = gaussianBlur(img, kernel_size, standard_deviation);
 
