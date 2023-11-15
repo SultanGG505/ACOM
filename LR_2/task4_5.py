@@ -34,8 +34,8 @@ while True:
         color = (0, 0, 0) # черный цвет
         thickness = 2 # толщина
         cv2.rectangle(frame,
-            (c_x - (width // 8), c_y - (height // 8)),
-            (c_x + (width // 8), c_y + (height // 8)),
+            (c_x - (width // 16), c_y - (height // 16)),
+            (c_x + (width // 16), c_y + (height // 16)),
             color, thickness)
 
     cv2.imshow('HSV_frame', hsv)
