@@ -1,7 +1,3 @@
-# Задание 3 Провести морфологические преобразования (открытие и
-# закрытие) фильтрованного изображения, вывести результаты на экран,
-# посмотреть смысл подобного применения операций erode и dilate.
-
 import cv2
 import numpy as np
 
@@ -11,31 +7,50 @@ while True:
     ret, frame = cap.read()
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
 
-    # определение диапазона красного цвета в HSV
-
-    lower_red = np.array([0, 120, 220]) # минимальные значения оттенка, насыщенности и значения(яркости)
-    upper_red = np.array([80, 255, 255]) # максимальные значения оттенка, насыщенности и значения(яркости)
-
-    # Маска - бинарное изображение, где пиксели, соответствующие заданному диапазону цвета, имеют значение 255 (белый), а остальные пиксели имеют значение 0 (черный).
+    lower_red = np.array([0, 120, 200])
+    upper_red = np.array([100, 255, 255])
     mask = cv2.inRange(hsv, lower_red, upper_red)
 
-    # применение маски на изображение
-    res = cv2.bitwise_and(frame, frame, mask=mask)
-
-    # структурирующий элемент(определяет размер и форму области)
     kernel = np.ones((5, 5), np.uint8)
 
-    # применение операции открытия - позволяет удалить шумы и мелкие объекты на изображении(удаление нежелательных пикселей или деталей)
-    opening = cv2.morphologyEx(res, cv2.MORPH_OPEN, kernel)
+    image_opening = cv2.morphologyEx(mask, cv2.MORPH_OPEN, kernel)
+    image_closing = cv2.morphologyEx(mask, cv2.MORPH_CLOSE, kernel)
 
-    # применение операции закрытия - позволяет заполнить маленькие пробелы и разрывы в объектах на изображении
-    closing = cv2.morphologyEx(res, cv2.MORPH_CLOSE, kernel)
-
-    cv2.imshow('Opening', opening)
-    cv2.imshow('Closing', closing)
+    cv2.imshow("Open", image_opening)
+    cv2.imshow("Close", image_closing)
 
     if cv2.waitKey(1) & 0xFF == ord(' '):
         break
 
 cap.release()
 cv2.destroyAllWindows()
+
+
+def erode(image, kernel):
+    m, n = image.shape
+    km, kn = kernel.shape
+    hkm = km // 2
+    hkn = kn // 2
+    eroded = np.copy(image)
+
+    for i in range(hkm, m - hkm):
+        for j in range(hkn, n - hkn):
+            eroded[i, j] = np.min(
+                image[i - hkm:i + hkm + 1, j - hkn:j + hkn + 1][kernel == 1])
+                # это срез изображения вокруг пикселя (i, j) с использованием размеров ядра
+    return eroded
+
+
+def dilate(image, kernel):
+    m, n = image.shape
+    km, kn = kernel.shape
+    hkm = km // 2
+    hkn = kn // 2
+    dilated = np.copy(image)
+
+    for i in range(hkm, m - hkm):
+        for j in range(hkn, n - hkn):
+            dilated[i, j] = np.max(
+                image[i - hkm:i + hkm + 1, j - hkn:j + hkn + 1][kernel == 1])
+
+    return dilated
