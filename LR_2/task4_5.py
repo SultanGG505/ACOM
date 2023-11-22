@@ -32,11 +32,34 @@ while True:
         c_y = int(moments["m01"] / moments["m00"])
         # отрисовка прямоугольника
         color = (0, 0, 0) # черный цвет
+        color2 = (0, 255, 0)  # черный цвет
         thickness = 2 # толщина
+        print(width)
+        c = 5
         cv2.rectangle(frame,
-            (c_x - (width // 16), c_y - (height // 16)),
-            (c_x + (width // 16), c_y + (height // 16)),
+
+            (c_x - (width // c), c_y - (height // c)),
+            (c_x + (width // c), c_y + (height // c)),
             color, thickness)
+
+        a = 7
+        b = 1000
+        cv2.rectangle(frame,
+                      (c_x - (b // 256) - a, c_y - (b // 256)),
+                      (c_x + (b // 256) - a, c_y + (b // 256)),
+                      color2, -1)
+        cv2.rectangle(frame,
+                      (c_x - (b // 256) + a, c_y - (b // 256)),
+                      (c_x + (b // 256) + a, c_y + (b // 256)),
+                      color2, -1)
+        cv2.rectangle(frame,
+                      (c_x - (b // 256) , c_y - (b // 256) - a),
+                      (c_x + (b // 256) , c_y + (b // 256) - a),
+                      color2, -1)
+        cv2.rectangle(frame,
+                      (c_x - (b // 256), c_y - (b // 256) + a),
+                      (c_x + (b // 256), c_y + (b // 256) + a),
+                      color2, -1)
 
     cv2.imshow('HSV_frame', hsv)
     cv2.imshow('Result_frame', frame)
