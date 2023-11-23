@@ -6,7 +6,7 @@ namespace GaussianBlur
         {
             InitializeComponent();
 
-            Bitmap originalImage = new Bitmap("2.jpg");
+            Bitmap originalImage = new Bitmap("C:\\Users\\User\\Documents\\GitHub\\ACOM\\media\\1.jpg");
 
             List<List<int>> bwImage = new List<List<int>>();
 
