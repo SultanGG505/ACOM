@@ -170,6 +170,6 @@ def main(path, standard_deviation, kernel_size, bound_path):
     cv2.waitKey(0)
 
 
-main(r'..\media\2.jpg',3,3, 3)
+# # main(r'..\media\2.jpg',3,3, 3)
 # main(r'..\media\2.jpg',6,3, 3)
-# main(r'..\media\2.jpg',100,9, 15)
+main(r'..\media\2.jpg',100,9, 15)
