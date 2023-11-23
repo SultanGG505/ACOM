@@ -1,0 +1,47 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "GradientBorderDetector/1.0.0": {
+        "dependencies": {
+          "MyGaussBlur": "1.0.0",
+          "MyGradientBorder": "1.0.0"
+        },
+        "runtime": {
+          "GradientBorderDetector.dll": {}
+        }
+      },
+      "MyGaussBlur/1.0.0": {
+        "runtime": {
+          "MyGaussBlur.dll": {}
+        }
+      },
+      "MyGradientBorder/1.0.0": {
+        "runtime": {
+          "MyGradientBorder.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GradientBorderDetector/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MyGaussBlur/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MyGradientBorder/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

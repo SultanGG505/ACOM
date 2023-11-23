@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GradientBorderDetector", "GradientBorderDetector\GradientBorderDetector.csproj", "{6656DA3C-7CE3-418A-800F-A08FED9C6FAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyGradientBorder", "MyGradientBorder\MyGradientBorder.csproj", "{C0E58F47-7522-41DD-9F79-C41E707623B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyGaussBlur", "MyGaussBlur\MyGaussBlur.csproj", "{7F923BE9-255C-4B2F-9C6C-2668F8198F76}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6656DA3C-7CE3-418A-800F-A08FED9C6FAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6656DA3C-7CE3-418A-800F-A08FED9C6FAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6656DA3C-7CE3-418A-800F-A08FED9C6FAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6656DA3C-7CE3-418A-800F-A08FED9C6FAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0E58F47-7522-41DD-9F79-C41E707623B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0E58F47-7522-41DD-9F79-C41E707623B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0E58F47-7522-41DD-9F79-C41E707623B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0E58F47-7522-41DD-9F79-C41E707623B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F923BE9-255C-4B2F-9C6C-2668F8198F76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F923BE9-255C-4B2F-9C6C-2668F8198F76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F923BE9-255C-4B2F-9C6C-2668F8198F76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F923BE9-255C-4B2F-9C6C-2668F8198F76}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {97231F81-B85B-459C-AFF2-6E1557D10B87}
+	EndGlobalSection
+EndGlobal
