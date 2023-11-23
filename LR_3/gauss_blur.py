@@ -35,7 +35,7 @@ def AnotherGaussianBlur(img, kernel_size, standard_deviation):
     for i in range(kernel_size):
         for j in range(kernel_size):
             kernel[i, j] = gauss(i, j, standard_deviation, a, b) # вычисление функции Гаусса
-    #print(kernel)
+    print(kernel)
 
     # Задание 2 - Нормализация матрицы ядра свёртки
     sum = 0
