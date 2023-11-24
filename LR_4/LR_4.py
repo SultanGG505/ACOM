@@ -56,6 +56,13 @@ def get_angle_number(x, y):
             elif (tg >= 2.414):
                 return 4
 i = 0
+
+# *.Сглаживание изображения с помощью фильтра Гаусса.
+# *.Вычисление градиента интенсивности с использованием операторов Собеля.
+# *.Подавление немаксимумов для выделения локальных максимумов в градиенте.
+# *.Двойная пороговая фильтрация для определения пикселей границ.
+# *.Связывание границ и удаление шума.
+
 def main(path, standard_deviation, kernel_size, bound_path):
     global i
     i += 1
@@ -68,6 +75,9 @@ def main(path, standard_deviation, kernel_size, bound_path):
     Gx = [[-1, 0, 1], [-2, 0, 2], [-1, 0, 1]]
     Gy = [[-1, -2, -1], [0, 0, 0], [1, 2, 1]]
 
+    # Оператор Собеля - это оператор, используемый для вычисления градиента яркости пикселей.Он основан на свертке изображения
+    # с двумя ядрами(одним для вычисления горизонтального градиента и другим для вертикального). Оператор Собеля выявляет вертикальные
+    # и горизонтальные границы на изображении.
     # применение операции свёртки
     img_Gx = Convolution(img, Gx)
     img_Gy = Convolution(img, Gy)
@@ -87,6 +97,7 @@ def main(path, standard_deviation, kernel_size, bound_path):
     for i in range(img.shape[0]):
         for j in range(img.shape[1]):
             img_angles[i][j] = get_angle_number(img_Gx[i][j], img_Gy[i][j])
+    print(img_angles)
     # вывод матрицы значений длин градиента
     img_gradient_to_print = img.copy()
     # поиск максимального значения длины градиента
@@ -101,12 +112,15 @@ def main(path, standard_deviation, kernel_size, bound_path):
     img_angles_to_print = img.copy()
     for i in range(img.shape[0]):
         for j in range(img.shape[1]):
-            img_angles_to_print[i][j] = img_angles[i][j] / 7 * 255 # необходимо для корректного отображения на экране
+            img_angles_to_print[i][j] = img_angles[i][j] * 45 # необходимо для корректного отображения на экране
     cv2.imshow('Matrix_angles ' + str(i), img_angles_to_print)
     print('Матрица значений углов градиента:')
     print(img_angles_to_print)
     # Задание 3 - подавление немаксимумов
     # инициализация массива границ изображения
+    # Этап подавления немаксимумов заключается в сравнении значений градиента пикселя с его соседями в
+    # направлении градиента. Только локальные максимумы градиента сохраняются, а все остальные пиксели подавляются.
+    # Угол градиента играет роль в определении направления проверки для каждого пикселя.
     img_border = img.copy()
     for i in range(img.shape[0]):
         for j in range(img.shape[1]):
@@ -170,6 +184,6 @@ def main(path, standard_deviation, kernel_size, bound_path):
     cv2.waitKey(0)
 
 
-# # main(r'..\media\2.jpg',3,3, 3)
+main(r'..\media\2.jpg',3,3, 3)
 # main(r'..\media\2.jpg',6,3, 3)
-main(r'..\media\2.jpg',100,9, 15)
+# main(r'..\media\2.jpg',100,9, 15)
