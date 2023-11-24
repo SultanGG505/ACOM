@@ -32,7 +32,7 @@ def main(kernel_size, standard_deviation, delta_tresh, min_area):
 
     while True:
         # сохраняем старый кадр чтобы вычислить разниц между кадрами
-        print("...")
+        # print("...")
         old_img = img.copy()
         ok, frame = video.read()
         if not ok:
@@ -51,8 +51,25 @@ def main(kernel_size, standard_deviation, delta_tresh, min_area):
         # интенсивностью выше delta_tresh становятся
         # белыми(255), остальные - черными.
         thresh = cv2.threshold(diff, delta_tresh, 255, cv2.THRESH_BINARY)[1]
+        # cv2.imshow("a",thresh)
+        print(thresh)
         # находим контуры
         (contors, hierarchy) = cv2.findContours(thresh, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+
+        # В thresh = cv2.threshold(diff, delta_tresh, 255, cv2.THRESH_BINARY)[1]   [1]
+        # означает извлечение элемента с индексом 1 из результата функции cv2.threshold().
+
+        # Функция cv2.threshold() возвращает два значения:
+        # 1) Возвращаемое значение(пороговое значение), которое было использовано для бинаризации.
+        # 2) Изображение после применения пороговой бинаризации.
+
+
+        # В данной строке кода[1] используется для извлечения второго значения(порогового
+        # значения) из результата функции. В данном случае, пороговое значение сохраняется в
+        # переменной thresh, и само бинаризированное изображение сохраняется в переменной
+        # thresh[0].Таким (образом,
+        #                  thresh) = cv2.threshold(diff, delta_tresh, 255, cv2.THRESH_BINARY)[1]
+        # сохраняет пороговое значение в переменной thresh.
 
         # если на кадре есть хотя бы один контур, чья площадь достаточно большая то записываем кадр
         for contr in contors:
