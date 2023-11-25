@@ -51,8 +51,8 @@ def main(kernel_size, standard_deviation, delta_tresh, min_area):
         # интенсивностью выше delta_tresh становятся
         # белыми(255), остальные - черными.
         thresh = cv2.threshold(diff, delta_tresh, 255, cv2.THRESH_BINARY)[1]
+        # print(thresh)
         # cv2.imshow("a",thresh)
-        print(thresh)
         # находим контуры
         (contors, hierarchy) = cv2.findContours(thresh, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
