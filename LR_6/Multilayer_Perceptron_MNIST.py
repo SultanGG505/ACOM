@@ -43,7 +43,7 @@ model.add(Dense(num_classes, activation='softmax'))
 # компиляция модели и обучение ее на тренировочных данных
 # настройка процесса обучения модели
 model.compile(loss='categorical_crossentropy',
-              optimizer=RMSprop(),
+              optimizer='adam',
               metrics=['accuracy'])
 
 tensorboard = TensorBoard(log_dir="C:/Users/User/Documents/GitHub/ACOM/LR_6/Logs", histogram_freq=0,
