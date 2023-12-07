@@ -11,7 +11,7 @@ import numpy as np
 
 # замер начала времени работы
 start_time = time.time()
-writer = SummaryWriter(log_dir='/LW_6/logs_1')
+writer = SummaryWriter(log_dir="C:/Users/User/Documents/GitHub/ACOM/LR_6/Logs")
 
 # загрузка данных MNIST (первый кортеж - тренировочные изображения и метки, а второй - тестовые изображения и метки)
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
@@ -64,7 +64,7 @@ history = model.fit(x_train, y_train,
                     callbacks=[tensorboard])
 
 # сохранение модели
-model.save("multilayer_perceptron.keras")
+model.save("./models/multilayer_perceptron.keras")
 
 print('==============================================================')
 # оценка потерь и точности модели

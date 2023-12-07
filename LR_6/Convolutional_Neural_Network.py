@@ -6,7 +6,7 @@ import numpy as np
 
 # замер начала времени работы
 start_time = time.time()
-writer = SummaryWriter(log_dir='/LW_6/logs_2')
+writer = SummaryWriter(log_dir="C:/Users/User/Documents/GitHub/ACOM/LR_6/Logs")
 
 # загрузка данных MNIST (первый кортеж - тренировочные изображения и метки, а второй - тестовые изображения и метки)
 (train_images, train_labels), (test_images, test_labels) = datasets.mnist.load_data()
@@ -55,7 +55,7 @@ history = model.fit(train_images, train_labels,
                     callbacks=[tensorboard_callback])
 
 # сохранение модели
-model.save("cnn_model.keras")
+model.save("./models/cnn_model.keras")
 
 print('==============================================================')
 # оценка потерь и точности модели
