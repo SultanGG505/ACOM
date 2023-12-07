@@ -3,15 +3,12 @@ import keras
 from keras.datasets import mnist
 from keras.models import Sequential
 from keras.layers import Dense, Dropout
-from keras.optimizers import RMSprop
-from keras.callbacks import TensorBoard
 import time
-from torch.utils.tensorboard import SummaryWriter
-import numpy as np
+
 
 # замер начала времени работы
 start_time = time.time()
-writer = SummaryWriter(log_dir="C:/Users/User/Documents/GitHub/ACOM/LR_6/Logs")
+
 
 # загрузка данных MNIST (первый кортеж - тренировочные изображения и метки, а второй - тестовые изображения и метки)
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
@@ -46,22 +43,14 @@ model.compile(loss='categorical_crossentropy',
               optimizer='adam',
               metrics=['accuracy'])
 
-tensorboard = TensorBoard(log_dir="C:/Users/User/Documents/GitHub/ACOM/LR_6/Logs", histogram_freq=0,
-                          write_graph=True, write_images=False)
 
-# запись данные изображений в файлы событий
-images = x_train[:20].reshape(-1, 28, 28, 1)
-images = (images * 255).astype(np.uint8)
-writer.add_images('mnist_images', images, dataformats='NHWC')
-writer.close()
 
 # обучение модели на тренировочных данных
 history = model.fit(x_train, y_train,
                     batch_size=128, # размер пакета
                     epochs=15, # количество эпох
                     verbose=1, # вывод информации о потерях, метриках и прогресс-бар
-                    validation_data=(x_test, y_test), # тестовые данные будут использоваться для проверки производительности модели во время обучения
-                    callbacks=[tensorboard])
+                    validation_data=(x_test, y_test)) # тестовые данные будут использоваться для проверки производительности модели во время обучения
 
 # сохранение модели
 model.save("./models/multilayer_perceptron.keras")
