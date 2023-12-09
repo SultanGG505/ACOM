@@ -3,7 +3,7 @@ import numpy as np
 from keras.models import load_model
 
 # загрузка модели получившейся ранее свёрточной нейронной сети
-model = load_model('../models/cnn_model.keras')
+model = load_model('../models/cnn_model_2.keras')
 
 # загрузка тестируемого изображение в оттенках серого
 image_path = '../input_picture/1.jpg'
@@ -22,6 +22,10 @@ image = image.reshape(1, 28, 28, 1)
 predictions = model.predict(image)
 # вывод предсказанных вероятностей для каждого класса цифр
 print(predictions)
+# вывод предсказанных вероятностей для каждого класса цифр в процентах
+for i, prob in enumerate(predictions[0]):
+    print(f"Вероятность для цифры {i}: {prob * 100}%")
+
 # получение индекса с максимальной вероятностью, который представляет предсказанную цифру
 predicted_class = np.argmax(predictions)
 

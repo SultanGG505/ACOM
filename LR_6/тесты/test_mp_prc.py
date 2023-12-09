@@ -12,7 +12,7 @@ img_cv = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
 # изменение размера изображения на 28x28 (аналогично размеру MNIST изображений)
 img_cv = cv2.resize(img_cv, (28, 28))
 # печать размера изображения (должен быть (28, 28))
-print('Размер тестируемого изображения:', img_cv.shape)
+print('Размер тестируемого изображения:',img_cv.shape)
 # нормализация изображения
 image = img_cv / 255.0
 # перевод изображения в одномерный вектор
@@ -20,13 +20,8 @@ image = image.reshape(1, 784)
 
 # получение предсказания модели для изображения
 predictions = model.predict(image)
-
-# вывод предсказанных вероятностей для каждого класса цифр в процентах
-predicted_percentages = predictions * 100
-print("Предсказанные вероятности:")
-for i, percentage in enumerate(predicted_percentages[0]):
-    print(f"Цифра {i}: {percentage:.2f}%")
-
+# вывод предсказанных вероятностей для каждого класса цифр
+print(predictions)
 # получение индекса класса с наибольшей вероятностью
 predicted_class = np.argmax(predictions)
 

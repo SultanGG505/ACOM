@@ -1,4 +1,5 @@
 import tensorflow as tf
+from keras.src.layers import Dense
 from tensorflow.keras import datasets, layers, models
 import time
 import numpy as np
@@ -30,7 +31,7 @@ model.add(layers.Conv2D(64, (3, 3), activation='relu'))
 model.add(layers.Flatten())
 # добавление выходного слоя
 model.add(layers.Dense(64, activation='relu'))
-model.add(layers.Dense(10))
+model.add(layers.Dense(10, activation='softmax'))
 
 # компиляция модели и обучение ее на тренировочных данных
 # настройка процесса обучения модели
@@ -47,7 +48,7 @@ history = model.fit(train_images, train_labels,
 
 
 # сохранение модели
-model.save("./models/cnn_model.keras")
+model.save("./models/cnn_model_2.keras")
 
 print('==============================================================')
 # оценка потерь и точности модели
