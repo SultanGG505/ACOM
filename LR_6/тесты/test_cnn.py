@@ -22,9 +22,10 @@ image = image.reshape(1, 28, 28, 1)
 predictions = model.predict(image)
 # вывод предсказанных вероятностей для каждого класса цифр
 print(predictions)
-# вывод предсказанных вероятностей для каждого класса цифр в процентах
-for i, prob in enumerate(predictions[0]):
-    print(f"Вероятность для цифры {i}: {prob * 100}%")
+predicted_percentages = predictions * 100
+print("Предсказанные вероятности:")
+for i, percentage in enumerate(predicted_percentages[0]):
+    print(f"Цифра {i}: {percentage:.2f}%")
 
 # получение индекса с максимальной вероятностью, который представляет предсказанную цифру
 predicted_class = np.argmax(predictions)
