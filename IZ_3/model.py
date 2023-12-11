@@ -2,8 +2,8 @@ import os
 import pickle
 import time
 
-os.environ["TF_GPU_ALLOCATOR"] = "cuda_malloc_async"
-
+# os.environ["TF_GPU_ALLOCATOR"] = "cuda_malloc_async"
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 import zipfile
 import numpy as np
 import tensorflow as tf
