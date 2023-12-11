@@ -1,18 +1,22 @@
 import os
 import pickle
 import time
+import random
 
+from keras import layers
+from scipy import ndimage
 # os.environ["TF_GPU_ALLOCATOR"] = "cuda_malloc_async"
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+# os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 import zipfile
 import numpy as np
 import tensorflow as tf
 from sklearn.metrics import accuracy_score, precision_score, recall_score
 from keras_preprocessing.image import ImageDataGenerator
 from tensorflow import keras
-from tensorflow.keras import layers
+
 import nibabel as nib
 from scipy import ndimage
+
 
 def read_nifti_file(filepath):
     """Read and load volume"""
@@ -23,6 +27,7 @@ def read_nifti_file(filepath):
     scan = scan.get_fdata()
     return scan
 
+
 def normalize(volume):
     """Normalize the volume"""
     min_value = -1000
@@ -32,6 +37,7 @@ def normalize(volume):
     volume = (volume - min_value) / (max_value - min_value)
     volume = volume.astype("float32")
     return volume
+
 
 def resize_volume(img):
     """Resize across z-axis"""
@@ -56,6 +62,7 @@ def resize_volume(img):
     img = ndimage.zoom(img, (width_factor, height_factor, depth_factor), order=1)
     return img
 
+
 def process_scan(path):
     """Read and resize volume"""
     # Read scan
@@ -65,6 +72,7 @@ def process_scan(path):
     # Resize width, height and depth
     volume = resize_volume(volume)
     return volume
+
 
 # Folder "CT-0" consists of CT scans having normal lung tissue,
 # no CT-signs of viral pneumonia.
@@ -102,42 +110,41 @@ config.gpu_options.allow_growth = True
 session = tf.compat.v1.Session(config=config)
 
 # Read and process the scans.
-# Each scan is resized across height, width, and depth and rescaled.
+# # Each scan is resized across height, width, and depth and rescaled.
+# start_time = time.time()
+# abnormal_scans = np.array([process_scan(path) for path in abnormal_scan_paths])
+# normal_scans = np.array([process_scan(path) for path in normal_scan_paths])
+# end_time = time.time()
+# print(end_time - start_time)
+#
+# # For the CT scans having the presence of viral pneumonia,
+# # assign 1, for the normal ones assign 0.
+# abnormal_labels = np.array([1 for _ in range(len(abnormal_scans))])
+# normal_labels = np.array([0 for _ in range(len(normal_scans))])
+
+# state_to_save = {
+#     'abnormal_scans': abnormal_scans,
+#     'normal_scans': normal_scans,
+#     'abnormal_labels': abnormal_labels,
+#     'normal_labels': normal_labels,
+# }
+#
+# with open('state1', 'wb') as file:
+#     pickle.dump(state_to_save, file)
+
+###########################
+###########################
+###########################
 start_time = time.time()
-abnormal_scans = np.array([process_scan(path) for path in abnormal_scan_paths])
-normal_scans = np.array([process_scan(path) for path in normal_scan_paths])
+with open('state1', 'rb') as file:
+    loaded_state = pickle.load(file)
+
+abnormal_scans = loaded_state['abnormal_scans']
+normal_scans = loaded_state['normal_scans']
+abnormal_labels = loaded_state['abnormal_labels']
+normal_labels = loaded_state['normal_labels']
 end_time = time.time()
 print(end_time-start_time)
-
-
-# For the CT scans having the presence of viral pneumonia,
-# assign 1, for the normal ones assign 0.
-abnormal_labels = np.array([1 for _ in range(len(abnormal_scans))])
-normal_labels = np.array([0 for _ in range(len(normal_scans))])
-
-state_to_save = {
-    'abnormal_scans': abnormal_scans,
-    'normal_scans': normal_scans,
-    'abnormal_labels': abnormal_labels,
-    'normal_labels': normal_labels,
-}
-
-with open('state1', 'wb') as file:
-    pickle.dump(state_to_save, file)
-
-###########################
-###########################
-###########################
-# start_time = time.time()
-# with open('state1', 'rb') as file:
-#     loaded_state = pickle.load(file)
-#
-# abnormal_scans = loaded_state['abnormal_scans']
-# normal_scans = loaded_state['normal_scans']
-# abnormal_labels = loaded_state['abnormal_labels']
-# normal_labels = loaded_state['normal_labels']
-# end_time = time.time()
-# print(end_time-start_time)
 
 # Split data in the ratio 70-30 for training and validation.
 x_train = np.concatenate((abnormal_scans[:70], normal_scans[:70]), axis=0)
@@ -149,8 +156,6 @@ print(
     % (x_train.shape[0], x_val.shape[0])
 )
 
-import random
-from scipy import ndimage
 
 @tf.function
 def rotate(volume):
@@ -170,6 +175,7 @@ def rotate(volume):
     augmented_volume = tf.numpy_function(scipy_rotate, [volume], tf.float32)
     return augmented_volume
 
+
 @tf.function
 def train_preprocessing(volume, label):
     """Process training data by rotating and adding a channel."""
@@ -178,11 +184,13 @@ def train_preprocessing(volume, label):
     volume = tf.expand_dims(volume, axis=3)
     return volume, label
 
+
 @tf.function
 def validation_preprocessing(volume, label):
     """Process validation data by only adding a channel."""
     volume = tf.expand_dims(volume, axis=3)
     return volume, label
+
 
 # Define data loaders.
 with tf.device('/GPU:0'):  # Use GPU for data loading
@@ -206,6 +214,7 @@ validation_dataset = (
 )
 
 import matplotlib.pyplot as plt
+
 
 # Показ снимков
 # data = train_dataset.take(1)
@@ -248,6 +257,7 @@ def get_model(width=128, height=128, depth=64):
     model = keras.Model(inputs, outputs, name="3dcnn")
     return model
 
+
 # Build model.
 with tf.device('/GPU:0'):  # Use GPU for model building
     model = get_model(width=128, height=128, depth=64)
@@ -267,7 +277,7 @@ with tf.device('/GPU:0'):  # Use GPU for model building
 # ...
 
 # Define callbacks.
-checkpoint_cb = keras.callbacks.ModelCheckpoint("iz_3_image.h5", save_best_only=True)
+checkpoint_cb = keras.callbacks.ModelCheckpoint("iz_3_image_2k.h5", save_best_only=True)
 
 # Train the model, doing validation at the end of each epoch
 epochs = 2000
@@ -298,7 +308,7 @@ for i, metric in enumerate(["acc", "loss"]):
     ax[i].legend(["train", "val"])
 
 # Load best weights.
-model.load_weights("iz_3_image_1k.h5")
+model.load_weights("iz_3_image_2k.h5")
 prediction = model.predict(np.expand_dims(x_val[0], axis=0))[0]
 scores = [1 - prediction[0], prediction[0]]
 
@@ -326,6 +336,6 @@ print(f"Accuracy: {accuracy}")
 print(f"Precision: {precision}")
 print(f"Recall: {recall}")
 
-model.save("iz_3_image_save", save_format="tf")
+model.save("iz_3_image_2", save_format="tf")
 
 plt.show()
