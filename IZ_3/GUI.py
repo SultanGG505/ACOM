@@ -7,17 +7,29 @@ from tensorflow import keras
 import nibabel as nib
 from scipy import ndimage
 
+# Получение размеров экрана
+def get_screen_size():
+    root = tk.Tk()
+    root.withdraw()  # Скрыть основное окно Tkinter
+    screen_width = root.winfo_screenwidth()
+    screen_height = root.winfo_screenheight()
+    root.destroy()
+    return screen_width, screen_height
+
+# Определение размеров окна
+screen_width, screen_height = get_screen_size()
+window_width = screen_width // 2
+window_height = screen_height // 2
+
 # Загрузите вашу модель
-model = keras.models.load_model("iz_3_image_2")
+model = keras.models.load_model("iz_3_image_3")
 
 def read_nifti_file(filepath):
-    # Оставьте эту функцию как есть
     scan = nib.load(filepath)
     scan = scan.get_fdata()
     return scan
 
 def normalize(volume):
-    # Оставьте эту функцию как есть
     min_value = -1000
     max_value = 400
     volume[volume < min_value] = min_value
@@ -27,7 +39,6 @@ def normalize(volume):
     return volume
 
 def resize_volume(img):
-    # Оставьте эту функцию как есть
     desired_depth = 64
     desired_width = 128
     desired_height = 128
@@ -45,18 +56,14 @@ def resize_volume(img):
     return img
 
 def process_scan(path):
-    # Оставьте эту функцию как есть
     volume = read_nifti_file(path)
     volume = normalize(volume)
     volume = resize_volume(volume)
     return volume
 
 def predict_scan(filepath):
-    # Загрузка и предобработка изображения
     scan = process_scan(filepath)
     scan = np.expand_dims(scan, axis=0)  # Добавление размерности пакета
-
-    # Предсказание
     prediction = model.predict(scan)
     score = [1 - prediction[0][0], prediction[0][0]]
     class_names = ["normal", "abnormal"]
@@ -67,14 +74,12 @@ def predict_scan(filepath):
     )
 
 def choose_file():
-    # Показать диалоговое окно выбора файла
     filepath = filedialog.askopenfilename(filetypes=[("NIfTI files", "*.nii")])
     if filepath:
         predict_scan(filepath)
         display_image(filepath)
 
 def display_image(filepath):
-    # Отображение изображения в окне Tkinter
     img = Image.open(filepath)
     img = img.resize((300, 300))  # Размеры изображения в окне
     img = ImageTk.PhotoImage(img)
@@ -84,6 +89,7 @@ def display_image(filepath):
 # Создание основного окна Tkinter
 root = tk.Tk()
 root.title("Проверка CT-сканов")
+root.geometry(f"{window_width}x{window_height}+{screen_width // 4}+{screen_height // 4}")
 
 # Элементы управления
 choose_button = tk.Button(root, text="Выбрать файл", command=choose_file)
