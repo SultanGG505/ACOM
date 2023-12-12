@@ -116,9 +116,9 @@ if gpus:
 # normal_scans = np.array([process_scan(path) for path in normal_scan_paths])
 # end_time = time.time()
 # print(end_time - start_time)
-#
-# # For the CT scans having the presence of viral pneumonia,
-# # assign 1, for the normal ones assign 0.
+
+# For the CT scans having the presence of viral pneumonia,
+# assign 1, for the normal ones assign 0.
 # abnormal_labels = np.array([1 for _ in range(len(abnormal_scans))])
 # normal_labels = np.array([0 for _ in range(len(normal_scans))])
 #
@@ -136,13 +136,14 @@ if gpus:
 #########################
 #########################
 start_time = time.time()
-with open('state1', 'rb') as file:
+with open('state_70_30', 'rb') as file:
     loaded_state = pickle.load(file)
 
 abnormal_scans = loaded_state['abnormal_scans']
 normal_scans = loaded_state['normal_scans']
-abnormal_labels = loaded_state['abnormal_labels']
-normal_labels = loaded_state['normal_labels']
+abnormal_labels = np.array([1 for _ in range(len(abnormal_scans))])
+normal_labels = np.array([0 for _ in range(len(normal_scans))])
+
 end_time = time.time()
 print(end_time-start_time)
 
@@ -277,7 +278,7 @@ with tf.device('/GPU:0'):  # Use GPU for model building
 # ...
 
 # Define callbacks.
-checkpoint_cb = keras.callbacks.ModelCheckpoint("iz_3_image_2k.h5", save_best_only=True)
+checkpoint_cb = keras.callbacks.ModelCheckpoint("iz_3_image_70_30.h5", save_best_only=True)
 
 # Train the model, doing validation at the end of each epoch
 epochs = 250
@@ -308,7 +309,7 @@ for i, metric in enumerate(["acc", "loss"]):
     ax[i].legend(["train", "val"])
 
 # Load best weights.
-model.load_weights("iz_3_image_2k.h5")
+model.load_weights("iz_3_image_70_30.h5")
 prediction = model.predict(np.expand_dims(x_val[0], axis=0))[0]
 scores = [1 - prediction[0], prediction[0]]
 
@@ -336,6 +337,6 @@ print(f"Accuracy: {accuracy}")
 print(f"Precision: {precision}")
 print(f"Recall: {recall}")
 
-model.save("iz_3_image_2", save_format="tf")
+model.save("iz_3_image_3", save_format="tf")
 
 plt.show()
