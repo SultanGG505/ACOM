@@ -5,7 +5,7 @@ import random
 
 from keras import layers
 from scipy import ndimage
-# os.environ["TF_GPU_ALLOCATOR"] = "cuda_malloc_async"
+os.environ["TF_GPU_ALLOCATOR"] = "cuda_malloc_async"
 # os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 import zipfile
 import numpy as np
@@ -105,11 +105,11 @@ if gpus:
     except RuntimeError as e:
         print(e)
 
-config = tf.compat.v1.ConfigProto()
-config.gpu_options.allow_growth = True
-session = tf.compat.v1.Session(config=config)
+# config = tf.compat.v1.ConfigProto()
+# config.gpu_options.allow_growth = True
+# session = tf.compat.v1.Session(config=config)
 
-# Read and process the scans.
+
 # # Each scan is resized across height, width, and depth and rescaled.
 # start_time = time.time()
 # abnormal_scans = np.array([process_scan(path) for path in abnormal_scan_paths])
@@ -121,7 +121,7 @@ session = tf.compat.v1.Session(config=config)
 # # assign 1, for the normal ones assign 0.
 # abnormal_labels = np.array([1 for _ in range(len(abnormal_scans))])
 # normal_labels = np.array([0 for _ in range(len(normal_scans))])
-
+#
 # state_to_save = {
 #     'abnormal_scans': abnormal_scans,
 #     'normal_scans': normal_scans,
@@ -129,12 +129,12 @@ session = tf.compat.v1.Session(config=config)
 #     'normal_labels': normal_labels,
 # }
 #
-# with open('state1', 'wb') as file:
+# with open('state2', 'wb') as file:
 #     pickle.dump(state_to_save, file)
 
-###########################
-###########################
-###########################
+#########################
+#########################
+#########################
 start_time = time.time()
 with open('state1', 'rb') as file:
     loaded_state = pickle.load(file)
@@ -197,7 +197,7 @@ with tf.device('/GPU:0'):  # Use GPU for data loading
     train_loader = tf.data.Dataset.from_tensor_slices((x_train, y_train))
     validation_loader = tf.data.Dataset.from_tensor_slices((x_val, y_val))
 
-batch_size = 2
+batch_size = 3
 # Augment on the fly during training.
 train_dataset = (
     train_loader.shuffle(len(x_train))
@@ -280,7 +280,7 @@ with tf.device('/GPU:0'):  # Use GPU for model building
 checkpoint_cb = keras.callbacks.ModelCheckpoint("iz_3_image_2k.h5", save_best_only=True)
 
 # Train the model, doing validation at the end of each epoch
-epochs = 2000
+epochs = 250
 model.fit(
     train_dataset,
     validation_data=validation_dataset,

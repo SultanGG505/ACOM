@@ -16,7 +16,7 @@ def unpack_single_gzip_in_folder(folder_path, dicom_file, is_good):
         gz_file_path = os.path.join(folder_path, gz_files[0])
 
         sub_folder = "good\\" if is_good == 1 else "bad\\"
-        output_file_path = "parsed_data\\" + sub_folder + dicom_file + ".nil"
+        output_file_path = "parsed_data\\" + sub_folder + dicom_file + ".nii"
 
         with gzip.open(gz_file_path, "rb") as f_in, open(
             output_file_path, "wb"
@@ -82,14 +82,14 @@ def parse_some_pack(pack_name):
 
 
 packs_name = [
-    # "0_100_studies",  # смешанные
+    "0_100_studies",  # смешанные
     "100_200_studies", # здоровые # загружен
-    # "200_300_studies",  # здоровые
-    # "300_400_studies",  # здоровые
-    # "400_500_studies",  # здоровые
+    "200_300_studies",  # здоровые
+    "300_400_studies",  # здоровые
+    "400_500_studies",  # здоровые
     "500_600_studies",  # больные # загружен
-    # "600_700_studies",  # больные
-    # "700_800_studies",  # больные
+    "600_700_studies",  # больные
+    "700_800_studies",  # больные
 ]
 
 for pack in packs_name:

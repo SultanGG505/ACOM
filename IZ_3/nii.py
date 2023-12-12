@@ -26,5 +26,7 @@ def rename_files_in_folder(folder_path):
 
 
 # Укажите путь к папке, в которой нужно произвести переименование
+folder_path = r"C:\Users\User\Documents\GitHub\ACOM\IZ_3\parsed_data\bad"
+rename_files_in_folder(folder_path)
 folder_path = r"C:\Users\User\Documents\GitHub\ACOM\IZ_3\parsed_data\good"
 rename_files_in_folder(folder_path)
