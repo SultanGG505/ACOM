@@ -197,7 +197,7 @@ with tf.device('/GPU:0'):  # Use GPU for data loading
     train_loader = tf.data.Dataset.from_tensor_slices((x_train, y_train))
     validation_loader = tf.data.Dataset.from_tensor_slices((x_val, y_val))
 
-batch_size = 1
+batch_size = 2
 # Augment on the fly during training.
 train_dataset = (
     train_loader.shuffle(len(x_train))

@@ -82,14 +82,14 @@ def parse_some_pack(pack_name):
 
 
 packs_name = [
-    "0_100_studies",  # смешанные
+    # "0_100_studies",  # смешанные
     "100_200_studies", # здоровые # загружен
-    "200_300_studies",  # здоровые
-    "300_400_studies",  # здоровые
-    "400_500_studies",  # здоровые
+    # "200_300_studies",  # здоровые
+    # "300_400_studies",  # здоровые
+    # "400_500_studies",  # здоровые
     "500_600_studies",  # больные # загружен
-    "600_700_studies",  # больные
-    "700_800_studies",  # больные
+    # "600_700_studies",  # больные
+    # "700_800_studies",  # больные
 ]
 
 for pack in packs_name:
