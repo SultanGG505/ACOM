@@ -5,6 +5,7 @@ import random
 
 from keras import layers
 from scipy import ndimage
+
 os.environ["TF_GPU_ALLOCATOR"] = "cuda_malloc_async"
 # os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 import zipfile
@@ -145,7 +146,7 @@ abnormal_labels = np.array([1 for _ in range(len(abnormal_scans))])
 normal_labels = np.array([0 for _ in range(len(normal_scans))])
 
 end_time = time.time()
-print(end_time-start_time)
+print(end_time - start_time)
 
 # Split data in the ratio 70-30 for training and validation.
 x_train = np.concatenate((abnormal_scans[:70], normal_scans[:70]), axis=0)
@@ -200,7 +201,7 @@ with tf.device('/GPU:0'):  # Use GPU for data loading
 
 #####################################################################################################
 # batch_size = 3
-batch_size = 2
+batch_size = 4
 # Augment on the fly during training.
 train_dataset = (
     train_loader.shuffle(len(x_train))
@@ -250,8 +251,6 @@ def get_model(width=128, height=128, depth=64):
     x = layers.MaxPool3D(pool_size=2)(x)
     x = layers.BatchNormalization()(x)
 
-
-
     x = layers.GlobalAveragePooling3D()(x)
     x = layers.Dense(units=512, activation="relu")(x)
     x = layers.Dropout(0.3)(x)
@@ -282,20 +281,21 @@ with tf.device('/GPU:0'):  # Use GPU for model building
 # ...
 
 # Define callbacks.
-checkpoint_cb = keras.callbacks.ModelCheckpoint("iz_3_image_70_30_2.h5", save_best_only=True)
+checkpoint_cb = keras.callbacks.ModelCheckpoint("iz_3_image_70_30_l.h5", save_best_only=True)
 
 # Train the model, doing validation at the end of each epoch
-epochs = 250
-model.fit(
-    train_dataset,
-    validation_data=validation_dataset,
-    epochs=epochs,
-    shuffle=True,
-    verbose=2,
-    callbacks=[
-        checkpoint_cb,
-    ],  # early_stopping_cb
-)
+with tf.device('/GPU:0'):
+    epochs = 250
+    model.fit(
+        train_dataset,
+        validation_data=validation_dataset,
+        epochs=epochs,
+        shuffle=True,
+        verbose=2,
+        callbacks=[
+            checkpoint_cb,
+        ],  # early_stopping_cb
+    )
 
 print("End of Education")
 
@@ -313,7 +313,7 @@ for i, metric in enumerate(["acc", "loss"]):
     ax[i].legend(["train", "val"])
 
 # Load best weights.
-model.load_weights("iz_3_image_70_30_2.h5")
+model.load_weights("iz_3_image_70_30_l.h5")
 prediction = model.predict(np.expand_dims(x_val[0], axis=0))[0]
 scores = [1 - prediction[0], prediction[0]]
 
@@ -341,6 +341,6 @@ print(f"Accuracy: {accuracy}")
 print(f"Precision: {precision}")
 print(f"Recall: {recall}")
 
-model.save("iz_3_image_4", save_format="tf")
+model.save("iz_3_image_l", save_format="tf")
 
 plt.show()

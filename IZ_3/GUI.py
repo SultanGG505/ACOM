@@ -68,10 +68,11 @@ def predict_scan(filepath):
     score = [1 - prediction[0][0], prediction[0][0]]
     class_names = ["normal", "abnormal"]
     result_text.set(
-        "Модель уверена на {:.2f}% что CT-скан {}.".format(
-            100 * score[1], class_names[int(np.round(prediction[0][0]))]
+        "Модель уверена на {:.2f}% для 'нормального' и {:.2f}% для 'патологического'.".format(
+            100 * score[0], 100 * score[1]
         )
     )
+
 
 def choose_file():
     filepath = filedialog.askopenfilename(filetypes=[("NIfTI files", "*.nii")])
