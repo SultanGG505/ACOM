@@ -16,5 +16,5 @@ def video():
         f.write(str(results))
 
 
-stream()
-# video()
+# stream()
+video()
