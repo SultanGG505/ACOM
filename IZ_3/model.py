@@ -201,7 +201,7 @@ with tf.device('/GPU:0'):  # Use GPU for data loading
 
 #####################################################################################################
 # batch_size = 3
-batch_size = 4
+batch_size = 5
 # Augment on the fly during training.
 train_dataset = (
     train_loader.shuffle(len(x_train))
@@ -251,11 +251,17 @@ def get_model(width=128, height=128, depth=64):
     x = layers.MaxPool3D(pool_size=2)(x)
     x = layers.BatchNormalization()(x)
 
+    # Добавим слой с функцией активации Leaky ReLU
+    x = layers.Conv3D(filters=512, kernel_size=3, activation=tf.keras.layers.LeakyReLU(alpha=0.2), padding='same')(x)
+    x = layers.MaxPool3D(pool_size=2)(x)
+    x = layers.BatchNormalization()(x)
+
     x = layers.GlobalAveragePooling3D()(x)
     x = layers.Dense(units=512, activation="relu")(x)
     x = layers.Dropout(0.3)(x)
 
-    outputs = layers.Dense(units=1, activation="sigmoid")(x)
+    # Меняем функцию активации на tanh
+    outputs = layers.Dense(units=1, activation="tanh")(x)
 
     # Define the model.
     model = keras.Model(inputs, outputs, name="3dcnn")
@@ -281,7 +287,7 @@ with tf.device('/GPU:0'):  # Use GPU for model building
 # ...
 
 # Define callbacks.
-checkpoint_cb = keras.callbacks.ModelCheckpoint("iz_3_image_70_30_l.h5", save_best_only=True)
+checkpoint_cb = keras.callbacks.ModelCheckpoint("iz_3_image_70_30_l2.h5", save_best_only=True)
 
 # Train the model, doing validation at the end of each epoch
 with tf.device('/GPU:0'):
@@ -313,7 +319,7 @@ for i, metric in enumerate(["acc", "loss"]):
     ax[i].legend(["train", "val"])
 
 # Load best weights.
-model.load_weights("iz_3_image_70_30_l.h5")
+model.load_weights("iz_3_image_70_30_l2.h5")
 prediction = model.predict(np.expand_dims(x_val[0], axis=0))[0]
 scores = [1 - prediction[0], prediction[0]]
 
@@ -341,6 +347,6 @@ print(f"Accuracy: {accuracy}")
 print(f"Precision: {precision}")
 print(f"Recall: {recall}")
 
-model.save("iz_3_image_l", save_format="tf")
+model.save("iz_3_image_l2", save_format="tf")
 
 plt.show()
