@@ -77,7 +77,7 @@ def choose_file():
     filepath = filedialog.askopenfilename(filetypes=[("NIfTI files", "*.nii")])
     if filepath:
         predict_scan(filepath)
-        display_image(filepath)
+        # display_image(filepath)
 
 def display_image(filepath):
     img = Image.open(filepath)
