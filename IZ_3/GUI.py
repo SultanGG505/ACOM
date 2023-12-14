@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import filedialog
+from tkinter import messagebox
 from PIL import Image, ImageTk
 import numpy as np
 import tensorflow as tf
@@ -37,7 +38,7 @@ window_width = screen_width // 2
 window_height = screen_height // 2
 
 # Загрузите вашу модель
-model = keras.models.load_model("iz_3_image_70_30_l2.h5")
+model = keras.models.load_model("iz_3_image.h5")
 
 def read_nifti_file(filepath):
     scan = nib.load(filepath)
@@ -83,22 +84,23 @@ def predict_scan(filepath):
     prediction = model.predict(scan)
     score = [1 - prediction[0][0], prediction[0][0]]
     class_names = ["normal", "abnormal"]
-    activate_main_window()
+
+
+    messagebox.showinfo("Результат модели", "Модель уверена на {:.2f}% для 'нормального' и {:.2f}% для 'патологического'.".format(
+            100 * score[0], 100 * score[1]))
+    open_nii_file_in_mricrogl(filepath, mricrogl_installation_path)
     result_text.set(
         "Модель уверена на {:.2f}% для 'нормального' и {:.2f}% для 'патологического'.".format(
             100 * score[0], 100 * score[1]
         )
     )
-    activate_main_window()
-    open_nii_file_in_mricrogl(filepath, mricrogl_installation_path)
-    activate_main_window()
+
 
 def choose_file():
     filepath = filedialog.askopenfilename(filetypes=[("NIfTI files", "*.nii")])
     if filepath:
-
         predict_scan(filepath)
-        # display_image(filepath)
+
 
 def display_image(filepath):
     img = Image.open(filepath)
@@ -106,8 +108,7 @@ def display_image(filepath):
     img = ImageTk.PhotoImage(img)
     image_label.config(image=img)
     image_label.image = img
-def activate_main_window():
-    root.focus_set()
+
 
 # Создание основного окна Tkinter
 root = tk.Tk()
