@@ -57,7 +57,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9984970092773438, 'inference': 50.99964141845703, 'postprocess': 1.001596450805664}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 2.9540061950683594, 'inference': 88.99903297424316, 'postprocess': 6.999731063842773}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -116,7 +116,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 1.9993782043457031, 'inference': 42.00100898742676, 'postprocess': 1.001119613647461}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9992122650146484, 'inference': 42.005062103271484, 'postprocess': 0.9999275207519531}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -175,7 +175,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.99945068359375, 'inference': 38.99884223937988, 'postprocess': 1.0001659393310547}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 1.0297298431396484, 'inference': 40.9696102142334, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -234,7 +234,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 1.0001659393310547, 'inference': 39.99924659729004, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9996891021728516, 'inference': 38.00082206726074, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -293,7 +293,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 1.0001659393310547, 'inference': 36.99994087219238, 'postprocess': 1.0018348693847656}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9806156158447266, 'inference': 36.99946403503418, 'postprocess': 1.0006427764892578}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -352,7 +352,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 1.9812583923339844, 'inference': 36.99898719787598, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 1.027822494506836, 'inference': 36.9725227355957, 'postprocess': 1.0001659393310547}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -411,7 +411,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9989738464355469, 'inference': 40.00043869018555, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 1.0006427764892578, 'inference': 42.9987907409668, 'postprocess': 1.0008811950683594}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -470,7 +470,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9984970092773438, 'inference': 41.001319885253906, 'postprocess': 1.0006427764892578}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 1.0526180267333984, 'inference': 36.946773529052734, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -529,7 +529,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 1.0085105895996094, 'inference': 35.98284721374512, 'postprocess': 0.9996891021728516}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 1.0156631469726562, 'inference': 36.98134422302246, 'postprocess': 0.9999275207519531}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -588,7 +588,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9987354278564453, 'inference': 34.99913215637207, 'postprocess': 1.001119613647461}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9987354278564453, 'inference': 37.99748420715332, 'postprocess': 1.0006427764892578}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -647,7 +647,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 1.0025501251220703, 'inference': 34.99722480773926, 'postprocess': 0.9999275207519531}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 1.0001659393310547, 'inference': 38.99979591369629, 'postprocess': 0.9996891021728516}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -706,7 +706,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9827613830566406, 'inference': 33.998966217041016, 'postprocess': 1.016855239868164}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 1.0018348693847656, 'inference': 36.998748779296875, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -765,7 +765,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 1.0173320770263672, 'inference': 44.98291015625, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 1.0001659393310547, 'inference': 34.000396728515625, 'postprocess': 0.99945068359375}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -824,7 +824,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 1.001596450805664, 'inference': 35.984039306640625, 'postprocess': 0.9992122650146484}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9989738464355469, 'inference': 33.99848937988281, 'postprocess': 1.001596450805664}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -883,7 +883,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 1.001119613647461, 'inference': 35.10880470275879, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9984970092773438, 'inference': 33.983707427978516, 'postprocess': 0.99945068359375}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -942,7 +942,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9989738464355469, 'inference': 34.05308723449707, 'postprocess': 0.9975433349609375}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 1.0204315185546875, 'inference': 38.977861404418945, 'postprocess': 0.9989738464355469}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -1001,7 +1001,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 1.024007797241211, 'inference': 36.21196746826172, 'postprocess': 1.028299331665039}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 1.0001659393310547, 'inference': 37.99867630004883, 'postprocess': 1.0004043579101562}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -1060,7 +1060,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9968280792236328, 'inference': 35.982608795166016, 'postprocess': 1.020193099975586}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9987354278564453, 'inference': 37.000179290771484, 'postprocess': 1.016855239868164}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -1119,7 +1119,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 1.0018348693847656, 'inference': 35.980224609375, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9968280792236328, 'inference': 35.99977493286133, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -1178,7 +1178,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 1.0018348693847656, 'inference': 34.97886657714844, 'postprocess': 1.0199546813964844}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9975433349609375, 'inference': 34.00063514709473, 'postprocess': 0.9996891021728516}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -1237,7 +1237,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9887218475341797, 'inference': 34.975528717041016, 'postprocess': 1.0225772857666016}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9953975677490234, 'inference': 37.00113296508789, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -1296,7 +1296,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9996891021728516, 'inference': 34.981727600097656, 'postprocess': 0.99945068359375}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9992122650146484, 'inference': 36.00049018859863, 'postprocess': 1.0008811950683594}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -1355,7 +1355,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9996891021728516, 'inference': 37.99867630004883, 'postprocess': 0.9999275207519531}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9999275207519531, 'inference': 34.999847412109375, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -1414,7 +1414,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 1.0004043579101562, 'inference': 35.98213195800781, 'postprocess': 0.9999275207519531}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 1.0151863098144531, 'inference': 34.98506546020508, 'postprocess': 1.0006427764892578}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -1473,7 +1473,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9992122650146484, 'inference': 34.99960899353027, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9996891021728516, 'inference': 34.99627113342285, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -1532,7 +1532,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 1.0161399841308594, 'inference': 35.98356246948242, 'postprocess': 1.0221004486083984}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 1.0213851928710938, 'inference': 35.977840423583984, 'postprocess': 0.9987354278564453}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -1591,7 +1591,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 1.0056495666503906, 'inference': 35.97545623779297, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9953975677490234, 'inference': 38.99979591369629, 'postprocess': 0.99945068359375}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -1650,7 +1650,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.980377197265625, 'inference': 38.00010681152344, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9968280792236328, 'inference': 34.981727600097656, 'postprocess': 0.9984970092773438}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -1709,7 +1709,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9996891021728516, 'inference': 34.98196601867676, 'postprocess': 0.9989738464355469}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.98419189453125, 'inference': 34.998178482055664, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -1768,7 +1768,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9987354278564453, 'inference': 34.98101234436035, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9999275207519531, 'inference': 34.998416900634766, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -1827,7 +1827,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9822845458984375, 'inference': 34.99770164489746, 'postprocess': 1.0223388671875}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 1.0008811950683594, 'inference': 37.999868392944336, 'postprocess': 1.0001659393310547}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -1886,7 +1886,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9977817535400391, 'inference': 34.982919692993164, 'postprocess': 0.9982585906982422}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 1.0004043579101562, 'inference': 33.99920463562012, 'postprocess': 0.9999275207519531}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -1945,7 +1945,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9946823120117188, 'inference': 36.98158264160156, 'postprocess': 0.9996891021728516}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9989738464355469, 'inference': 43.99991035461426, 'postprocess': 0.9996891021728516}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -2004,7 +2004,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 1.9991397857666016, 'inference': 36.000967025756836, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 1.9927024841308594, 'inference': 38.999080657958984, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -2063,7 +2063,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9844303131103516, 'inference': 34.99794006347656, 'postprocess': 0.9996891021728516}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9999275207519531, 'inference': 45.00007629394531, 'postprocess': 1.0001659393310547}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -2122,7 +2122,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9982585906982422, 'inference': 34.98125076293945, 'postprocess': 0.9996891021728516}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9999275207519531, 'inference': 37.999629974365234, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -2181,7 +2181,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9965896606445312, 'inference': 34.98244285583496, 'postprocess': 1.0204315185546875}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9961128234863281, 'inference': 38.00082206726074, 'postprocess': 0.9996891021728516}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -2240,7 +2240,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9968280792236328, 'inference': 37.981510162353516, 'postprocess': 1.0001659393310547}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9989738464355469, 'inference': 35.999298095703125, 'postprocess': 1.0175704956054688}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -2299,7 +2299,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.988006591796875, 'inference': 35.97545623779297, 'postprocess': 1.0006427764892578}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 1.0194778442382812, 'inference': 35.979270935058594, 'postprocess': 1.0170936584472656}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -2358,7 +2358,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 1.0006427764892578, 'inference': 35.98141670227051, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9970664978027344, 'inference': 39.998769760131836, 'postprocess': 1.0001659393310547}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -2417,7 +2417,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9984970092773438, 'inference': 34.98196601867676, 'postprocess': 1.0001659393310547}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 1.0209083557128906, 'inference': 39.97397422790527, 'postprocess': 1.001119613647461}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -2476,7 +2476,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9946823120117188, 'inference': 34.978628158569336, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9980201721191406, 'inference': 38.00153732299805, 'postprocess': 0.9999275207519531}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -2535,7 +2535,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9930133819580078, 'inference': 37.98866271972656, 'postprocess': 1.0023117065429688}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9691715240478516, 'inference': 37.9941463470459, 'postprocess': 1.0008811950683594}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -2594,7 +2594,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 1.001596450805664, 'inference': 35.981178283691406, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 1.0006427764892578, 'inference': 39.998531341552734, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -2653,7 +2653,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 1.0004043579101562, 'inference': 34.98220443725586, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9996891021728516, 'inference': 41.99790954589844, 'postprocess': 0.9996891021728516}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -2712,7 +2712,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9891986846923828, 'inference': 34.975290298461914, 'postprocess': 1.0001659393310547}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9987354278564453, 'inference': 40.00067710876465, 'postprocess': 1.0001659393310547}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -2771,7 +2771,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9829998016357422, 'inference': 34.996986389160156, 'postprocess': 1.0013580322265625}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 1.0006427764892578, 'inference': 38.99860382080078, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -2830,7 +2830,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9953975677490234, 'inference': 37.98341751098633, 'postprocess': 0.9989738464355469}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9827613830566406, 'inference': 36.00025177001953, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -2889,7 +2889,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 1.0230541229248047, 'inference': 36.97395324707031, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9822845458984375, 'inference': 36.99970245361328, 'postprocess': 1.001119613647461}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -2948,7 +2948,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 1.0004043579101562, 'inference': 34.98220443725586, 'postprocess': 1.020669937133789}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9677410125732422, 'inference': 39.000511169433594, 'postprocess': 1.0025501251220703}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -3007,7 +3007,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 1.010894775390625, 'inference': 34.97052192687988, 'postprocess': 0.99945068359375}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9975433349609375, 'inference': 38.994550704956055, 'postprocess': 1.001119613647461}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -3066,7 +3066,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.980377197265625, 'inference': 34.99722480773926, 'postprocess': 0.9999275207519531}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.99945068359375, 'inference': 35.99739074707031, 'postprocess': 0.99945068359375}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -3125,7 +3125,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9970664978027344, 'inference': 36.981821060180664, 'postprocess': 0.99945068359375}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9999275207519531, 'inference': 35.00032424926758, 'postprocess': 0.9984970092773438}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -3184,7 +3184,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.980377197265625, 'inference': 38.00010681152344, 'postprocess': 0.9984970092773438}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9834766387939453, 'inference': 36.99970245361328, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -3243,7 +3243,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 1.001596450805664, 'inference': 39.00027275085449, 'postprocess': 1.020193099975586}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 1.0182857513427734, 'inference': 37.98079490661621, 'postprocess': 1.0187625885009766}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -3302,7 +3302,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9820461273193359, 'inference': 35.00032424926758, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.0, 'inference': 38.00082206726074, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -3361,7 +3361,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 1.0101795196533203, 'inference': 35.971879959106445, 'postprocess': 0.9992122650146484}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9987354278564453, 'inference': 35.997867584228516, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -3420,7 +3420,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 1.001119613647461, 'inference': 37.979841232299805, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9999275207519531, 'inference': 35.99882125854492, 'postprocess': 0.9989738464355469}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -3479,7 +3479,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9987354278564453, 'inference': 35.98189353942871, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 1.001596450805664, 'inference': 35.99834442138672, 'postprocess': 0.9989738464355469}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -3538,7 +3538,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9982585906982422, 'inference': 34.98220443725586, 'postprocess': 0.9989738464355469}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.988006591796875, 'inference': 36.99493408203125, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -3597,7 +3597,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 1.0001659393310547, 'inference': 34.981727600097656, 'postprocess': 1.0001659393310547}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9973049163818359, 'inference': 37.000179290771484, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -3656,7 +3656,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9913444519042969, 'inference': 34.975528717041016, 'postprocess': 0.9999275207519531}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 1.0018348693847656, 'inference': 36.00001335144043, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -3715,7 +3715,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 1.0194778442382812, 'inference': 37.9793643951416, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9987354278564453, 'inference': 36.99994087219238, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -3774,7 +3774,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9958744049072266, 'inference': 35.98332405090332, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.0, 'inference': 38.99741172790527, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -3833,7 +3833,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9644031524658203, 'inference': 35.00056266784668, 'postprocess': 0.9992122650146484}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.99945068359375, 'inference': 39.0009880065918, 'postprocess': 1.0042190551757812}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -3892,7 +3892,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9989738464355469, 'inference': 35.982370376586914, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9996891021728516, 'inference': 37.99843788146973, 'postprocess': 1.001596450805664}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -3951,7 +3951,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9944438934326172, 'inference': 34.98268127441406, 'postprocess': 1.0001659393310547}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9987354278564453, 'inference': 39.00003433227539, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -4010,7 +4010,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9813308715820312, 'inference': 37.99891471862793, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 1.0006427764892578, 'inference': 37.99748420715332, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -4069,7 +4069,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9977817535400391, 'inference': 36.98158264160156, 'postprocess': 0.9999275207519531}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9953975677490234, 'inference': 40.00091552734375, 'postprocess': 0.9973049163818359}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -4128,7 +4128,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9760856628417969, 'inference': 34.99960899353027, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9992122650146484, 'inference': 51.00297927856445, 'postprocess': 1.0006427764892578}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -4187,7 +4187,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9975433349609375, 'inference': 34.98077392578125, 'postprocess': 1.0001659393310547}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 1.0004043579101562, 'inference': 37.9941463470459, 'postprocess': 1.0004043579101562}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -4246,7 +4246,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 1.003265380859375, 'inference': 34.97815132141113, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9992122650146484, 'inference': 37.00065612792969, 'postprocess': 0.9996891021728516}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -4305,7 +4305,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 1.0058879852294922, 'inference': 36.97538375854492, 'postprocess': 0.9996891021728516}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9992122650146484, 'inference': 34.999847412109375, 'postprocess': 1.0037422180175781}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -4364,7 +4364,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 1.0001659393310547, 'inference': 35.98141670227051, 'postprocess': 0.9996891021728516}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9996891021728516, 'inference': 35.00103950500488, 'postprocess': 0.9989738464355469}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -4423,7 +4423,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9996891021728516, 'inference': 35.98165512084961, 'postprocess': 0.9999275207519531}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 1.0156631469726562, 'inference': 36.98325157165527, 'postprocess': 0.9992122650146484}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -4482,7 +4482,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 1.003265380859375, 'inference': 38.018226623535156, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 1.0020732879638672, 'inference': 35.9807014465332, 'postprocess': 1.0013580322265625}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -4541,7 +4541,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9834766387939453, 'inference': 36.99827194213867, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 1.0008811950683594, 'inference': 35.99810600280762, 'postprocess': 0.9982585906982422}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -4600,7 +4600,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9961128234863281, 'inference': 37.00065612792969, 'postprocess': 1.0001659393310547}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9996891021728516, 'inference': 35.99977493286133, 'postprocess': 0.9996891021728516}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -4659,7 +4659,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 1.0001659393310547, 'inference': 36.99970245361328, 'postprocess': 1.0001659393310547}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9992122650146484, 'inference': 36.98229789733887, 'postprocess': 1.0006427764892578}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -4718,7 +4718,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 1.0008811950683594, 'inference': 35.98165512084961, 'postprocess': 1.0213851928710938}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 1.0006427764892578, 'inference': 39.000749588012695, 'postprocess': 1.0187625885009766}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -4777,7 +4777,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9975433349609375, 'inference': 35.98213195800781, 'postprocess': 0.99945068359375}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.99945068359375, 'inference': 37.00065612792969, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -4836,7 +4836,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9977817535400391, 'inference': 35.98141670227051, 'postprocess': 1.0008811950683594}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9999275207519531, 'inference': 35.996198654174805, 'postprocess': 1.0006427764892578}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -4895,7 +4895,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9851455688476562, 'inference': 38.99526596069336, 'postprocess': 1.0228157043457031}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9963512420654297, 'inference': 36.99946403503418, 'postprocess': 1.0008811950683594}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -4954,7 +4954,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9980201721191406, 'inference': 36.98158264160156, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 1.024007797241211, 'inference': 35.973310470581055, 'postprocess': 1.0197162628173828}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -5013,7 +5013,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9989738464355469, 'inference': 35.982370376586914, 'postprocess': 1.0187625885009766}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 1.016855239868164, 'inference': 38.98119926452637, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -5072,7 +5072,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9849071502685547, 'inference': 35.97426414489746, 'postprocess': 0.9996891021728516}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9999275207519531, 'inference': 39.99662399291992, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -5131,7 +5131,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9799003601074219, 'inference': 35.997629165649414, 'postprocess': 1.0004043579101562}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.99945068359375, 'inference': 37.99891471862793, 'postprocess': 0.9992122650146484}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -5190,7 +5190,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9989738464355469, 'inference': 37.98246383666992, 'postprocess': 1.0209083557128906}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 1.0008811950683594, 'inference': 33.99944305419922, 'postprocess': 0.9999275207519531}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -5249,7 +5249,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9999275207519531, 'inference': 36.98158264160156, 'postprocess': 1.0001659393310547}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9977817535400391, 'inference': 34.00087356567383, 'postprocess': 0.9992122650146484}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -5308,7 +5308,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9968280792236328, 'inference': 36.98134422302246, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9946823120117188, 'inference': 47.997474670410156, 'postprocess': 0.99945068359375}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -5367,7 +5367,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9863376617431641, 'inference': 36.98015213012695, 'postprocess': 1.0204315185546875}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 1.0154247283935547, 'inference': 34.98363494873047, 'postprocess': 0.99945068359375}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -5426,7 +5426,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9996891021728516, 'inference': 35.980939865112305, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 1.0154247283935547, 'inference': 34.983158111572266, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -5485,7 +5485,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.988006591796875, 'inference': 38.97881507873535, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 1.0013580322265625, 'inference': 33.99848937988281, 'postprocess': 0.99945068359375}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -5544,7 +5544,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9779930114746094, 'inference': 35.99715232849121, 'postprocess': 1.0008811950683594}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9999275207519531, 'inference': 35.997629165649414, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -5603,7 +5603,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9999275207519531, 'inference': 35.976409912109375, 'postprocess': 1.001119613647461}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9984970092773438, 'inference': 37.996768951416016, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -5662,7 +5662,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9982585906982422, 'inference': 37.98222541809082, 'postprocess': 0.9996891021728516}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.99945068359375, 'inference': 35.99882125854492, 'postprocess': 1.0178089141845703}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -5721,7 +5721,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9996891021728516, 'inference': 35.98165512084961, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 0.9808540344238281, 'inference': 34.99722480773926, 'postprocess': 1.0020732879638672}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -5780,7 +5780,7 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9806156158447266, 'inference': 38.00034523010254, 'postprocess': 0.9996891021728516}, ultralytics.engine.results.Results object with attributes:
+speed: {'preprocess': 1.0256767272949219, 'inference': 36.97466850280762, 'postprocess': 0.0}, ultralytics.engine.results.Results object with attributes:
 
 boxes: ultralytics.engine.results.Boxes object
 keypoints: None
@@ -5839,4 +5839,4 @@ orig_shape: (532, 1280)
 path: 'C:\\Users\\User\\Documents\\GitHub\\ACOM\\LR_8\\faces.mp4'
 probs: None
 save_dir: None
-speed: {'preprocess': 0.9787082672119141, 'inference': 36.99946403503418, 'postprocess': 1.0004043579101562}]
+speed: {'preprocess': 0.99945068359375, 'inference': 34.996747970581055, 'postprocess': 1.0173320770263672}]
