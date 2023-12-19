@@ -6,8 +6,8 @@ import random
 from keras import layers
 from scipy import ndimage
 
-os.environ["TF_GPU_ALLOCATOR"] = "cuda_malloc_async"
-# os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+# os.environ["TF_GPU_ALLOCATOR"] = "cuda_malloc_async"
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 import zipfile
 import numpy as np
 import tensorflow as tf
@@ -201,7 +201,7 @@ with tf.device('/GPU:0'):  # Use GPU for data loading
 
 #####################################################################################################
 # batch_size = 3
-batch_size = 5
+batch_size = 1
 # Augment on the fly during training.
 train_dataset = (
     train_loader.shuffle(len(x_train))
@@ -258,7 +258,7 @@ def get_model(width=128, height=128, depth=64):
 
     x = layers.GlobalAveragePooling3D()(x)
     x = layers.Dense(units=512, activation="relu")(x)
-    x = layers.Dropout(0.3)(x)
+    x = layers.Dropout(0.2)(x)
 
     # Меняем функцию активации на tanh
     outputs = layers.Dense(units=1, activation="tanh")(x)
@@ -288,10 +288,18 @@ with tf.device('/GPU:0'):  # Use GPU for model building
 
 # Define callbacks.
 checkpoint_cb = keras.callbacks.ModelCheckpoint("iz_3_image_70_30_l2.h5", save_best_only=True)
-
+# early_stopping_cb = keras.callbacks.EarlyStopping(
+#     monitor="val_loss",
+#     min_delta=0,
+#     patience=0,
+#     verbose=0,
+#     mode="auto",
+#     baseline=None,
+#     restore_best_weights=False,
+# )
 # Train the model, doing validation at the end of each epoch
 with tf.device('/GPU:0'):
-    epochs = 250
+    epochs = 100
     model.fit(
         train_dataset,
         validation_data=validation_dataset,
@@ -300,7 +308,8 @@ with tf.device('/GPU:0'):
         verbose=2,
         callbacks=[
             checkpoint_cb,
-        ],  # early_stopping_cb
+            # early_stopping_cb
+        ],
     )
 
 print("End of Education")
