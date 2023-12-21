@@ -189,8 +189,8 @@ def test_augmented_dataset(rec_type, val_type, augmented_path, ground_truth_file
 
 
 def main():
-    image_paths = ['capchi/1-.jpg', 'capchi/2-.jpg', 'capchi/3-.jpg', 'capchi/4-.jpg', 'capchi/5-.jpg', 'capchi/6-.jpg',
-                   'capchi/7-.jpg', 'capchi/8-.jpg', 'capchi/9-.jpg', 'capchi/10-.jpg', 'capchi/11-.jpg']
+    image_paths = ['capchi/1.jpg', 'capchi/2.jpg', 'capchi/3.jpg', 'capchi/4.jpg', 'capchi/5.jpg', 'capchi/6.jpg',
+                   'capchi/7.jpg', 'capchi/8.jpg', 'capchi/9.jpg', 'capchi/10.jpg', 'capchi/11.jpg']
 
     true_captcha_txt = 'capchi/true_text.txt'
     dpath = "capchi"
